@@ -1,19 +1,20 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 html{
     background-color: #080808;
-    overflow: hidden;
 }
 
 /*Menu lateral*/
 #nav {
+    z-index: 10;
     position: fixed;
     padding-left: 0%; /* Ajusta si es necesario */
     background-color: #030303;
-    width: 8%; /* El ancho del contenedor */
+    width: 180px; /* El ancho del contenedor */
     min-height: 100%;
     border-right: 2px solid #111111;
     display: flex;
@@ -41,6 +42,97 @@ html{
 
 #nav li a:hover {
     text-decoration: none;
-    color: #c4add8;
+    color: #a020f0;
+}
+
+/*container*/
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    z-index: 5;
+    margin-top: 20px; /* Ajusta el valor según el espacio que quieras */
+    box-sizing: border-box;
+}
+
+/*sobreMi*/
+#sobreMi{
+    background-image: url("../img/fondo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #111111;
+}
+
+#fondoSecundario{
+    background-color: rgba(0, 0, 0, 0.4); /* Color negro con opacidad del 40% */
+    z-index: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 18rem; /* Tamaño de la fuente grande */
+    color: #a020f0; /* Color morado */
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #ffffff;
+    max-width: 40%;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; /* Espacio entre líneas */
+    font-weight: 300;
+}
+
+.button {
+    margin: 40px;
+    border-radius: 0.4rem;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: #a020f0;
+    background: none;
+    border: 2px solid #a020f0;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    background-color: #a020f0;
+    color: #ffffff;
+}
+
+/*proyectos*/
+#proyectos{
+
+}
+
+/*contacto*/
+#contacto{
+
+}
+
+/*footer*/
+
+footer{
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+    background-color: #030303;
 }
 
