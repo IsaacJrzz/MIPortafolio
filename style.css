@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    background-color: #080808;
+    overflow: hidden;
+}
+
+/*Menu lateral*/
+#nav {
+    position: fixed;
+    padding-left: 0%; /* Ajusta si es necesario */
+    background-color: #030303;
+    width: 8%; /* El ancho del contenedor */
+    min-height: 100%;
+    border-right: 2px solid #111111;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#nav ul {
+    padding-left: 0; /* Elimina el padding izquierdo de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+    list-style-type: none; /* Quita los puntos de la lista */
+}
+
+#nav li {
+    text-align: center;
+    padding: 20px 0; /* Agrega espacio (padding) entre los elementos de la lista */
+}
+
+#nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+#nav li a:hover {
+    text-decoration: none;
+    color: #c4add8;
+}
+
