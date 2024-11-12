@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+body{
+    overflow: auto;
+}
+
 html{
     background-color: #080808;
 }
@@ -38,11 +42,13 @@ html{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 #nav li a:hover {
     text-decoration: none;
     color: #a020f0;
+    transition: 0.5s;
 }
 
 /*container*/
@@ -51,11 +57,37 @@ html{
     min-height: 100vh;
     text-align: center;
     z-index: 5;
-    margin-top: 20px; /* Ajusta el valor según el espacio que quieras */
+    margin-top: 60px; /* Ajusta el valor según el espacio que quieras */
     box-sizing: border-box;
 }
 
 /*sobreMi*/
+#redes{
+    display: flex;
+    justify-content: flex-end; /* Usar 'flex-end' en vez de 'right' */
+    max-width: 95%;
+    position: relative; /* Asegura que los elementos se posicionen correctamente dentro del contenedor */
+    z-index: 10;
+    margin-top: 10px;
+}
+
+#redes p{
+    color: #a020f0;
+    position: fixed;
+    border: 2px solid #a020f0;
+    border-radius: 0.4rem;
+    padding: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: 0.8s;
+}
+
+#redes p:hover{
+    color: #fc1c6d;
+    border: 2px solid #fc1c6d;
+    transition: 0.8s;
+}
+
 #sobreMi{
     background-image: url("../img/fondo.jpg");
     background-attachment: fixed;
@@ -75,11 +107,20 @@ html{
 }
 
 .title {
-    margin-top: 100px;
+    max-width: 40%;
     font-size: 18rem; /* Tamaño de la fuente grande */
     color: #a020f0; /* Color morado */
     margin-top: 100px;
     margin-bottom: -50px;
+    transition: 0.8s;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title:hover{
+    color: #fc1c6d;
+    transition: 0.8s;
 }
 
 .description {
@@ -105,7 +146,7 @@ html{
     background: none;
     border: 2px solid #a020f0;
     cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+    transition: 0.8s;
     padding: 10px;
     padding-right: 30px;
     padding-left: 30px;
@@ -113,8 +154,11 @@ html{
 }
 
 .button:hover {
-    background-color: #a020f0;
+    background-color: #fc1c6d;
+    border: 2px solid #fc1c6d;
     color: #ffffff;
+    transition: 0.8s;
+
 }
 
 /*proyectos*/
