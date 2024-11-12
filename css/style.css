@@ -4,8 +4,14 @@
     font-family: sans-serif;
 }
 
+::selection {
+    background-color: #a020f0; /* Cambia el color de fondo de la selección */
+    color: #fff; /* Cambia el color del texto seleccionado */
+  }
+
 body{
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 html{
@@ -52,8 +58,11 @@ i:hover{
 
 #nav ul {
     padding-left: 0; /* Elimina el padding izquierdo de la lista */
-    margin: 0; /* Elimina el margen de la lista */
-    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0; /* Elimina el margen de la lista */ 
+}
+
+ul{
+    list-style-type: none;
 }
 
 #nav li {
@@ -87,12 +96,14 @@ i:hover{
 /*sobreMi*/
 
 #sobreMi{
+    z-index: 6;
     background-image: url("../img/fondo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 2px solid #111111;
+    position: relative
 }
 
 #fondoSecundario{
@@ -105,8 +116,8 @@ i:hover{
 }
 
 .title {
-    max-width: 50%;
-    font-size: 18rem; /* Tamaño de la fuente grande */
+    max-width: 55%;
+    font-size: 20rem; /* Tamaño de la fuente grande */
     color: #a020f0; /* Color morado */
     margin-top: 100px;
     margin-bottom: -50px;
@@ -144,7 +155,7 @@ i:hover{
     background: none;
     border: 2px solid #a020f0;
     cursor: pointer;
-    transition: 0.8s;
+    transition: 0.5s;
     padding: 10px;
     padding-right: 30px;
     padding-left: 30px;
@@ -155,23 +166,45 @@ i:hover{
     background-color: #fc1c6d;
     border: 2px solid #fc1c6d;
     color: #ffffff;
-    transition: 0.8s;
+    transition: 0.5s;
 
 }
 
 /*proyectos*/
 #proyectos{
+    margin-top: -400px;
+    min-width: 130%;
+    z-index: 1;
+    background-color: #0c0c0c;
+    rotate: 10deg;
+    position: relative;
+    min-height: 200vh;
+}
 
+#containerRotate{
+    rotate: -10deg;
+    padding-right: 30%;
+}
+
+.container h2{
+    padding-top: 500px;
+    color: #fff;
+    font-size: 6rem;
 }
 
 /*contacto*/
 #contacto{
+    
+}
 
+#containerContacto{
+    margin-top: -300px;
 }
 
 /*footer*/
 
 footer{
+    border-top: 2px solid #111111;
     padding: 60px;
     text-align: center;
     color: #fff;
