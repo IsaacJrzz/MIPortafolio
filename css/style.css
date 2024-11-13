@@ -42,6 +42,9 @@ i:hover{
 }
 
 /*Menu lateral*/
+#navMovil{
+    visibility: hidden;
+}
 #nav {
     z-index: 10;
     position: fixed;
@@ -212,3 +215,106 @@ footer{
     background-color: #030303;
 }
 
+
+/*Responsive movil*/
+
+@media (max-width: 768px) {
+    #nav{
+        visibility: hidden;
+    }
+
+    /* Ajustes para el menú lateral */
+    #navMovil {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #030303; /* Color de fondo */
+        border-bottom: 2px solid #111111; /* Borde inferior */
+        z-index: 1000;
+    }
+
+    .cuerporecMovil {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0; /* Espaciado dentro del menú */
+    }
+
+    /* Estilo de la tabla */
+    #navMovil table {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navMovil td {
+        padding: 10px; /* Espaciado entre las celdas */
+    }
+
+    #navMovil a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        transition: color 0.5s;
+    }
+
+    #navMovil a:hover {
+        color: #a020f0;
+    }
+
+    /* Ajuste para el contenedor principal para evitar superposición */
+    .container {
+        padding-top: 60px; /* Deja espacio para el menú fijo */
+    }
+
+    /* Título y descripción */
+    .title {
+        font-size: 5rem; /* Reduce el tamaño del título */
+        max-width: 90%;
+        margin-top: 180px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 1rem;
+        max-width: 80%;
+        padding: 0 10px;
+    }
+
+    /* Sección de proyectos */
+    #proyectos {
+        margin-top: 0;
+        min-width: 100%; /* Ajusta el ancho al 100% */
+        rotate: 0deg;
+        min-height: 100vh;
+    }
+
+    #containerRotate {
+        rotate: 0deg;
+        padding-right: 0;
+    }
+
+    /* Títulos dentro de contenedores */
+    .container h2 {
+        padding-top: 50px;
+        font-size: 3rem; /* Reduce el tamaño del subtítulo */
+    }
+
+    /* Botones */
+    .button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px;
+        font-size: 0.9rem;
+    }
+
+    /* Iconos de redes sociales */
+    #redes {
+        right: 10px; /* Acerca el contenedor de redes al borde */
+        top: 150px;
+    }
+}
