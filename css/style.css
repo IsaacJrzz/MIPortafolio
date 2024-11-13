@@ -283,7 +283,7 @@ footer{
 
     /* Sección de proyectos */
     #proyectos {
-        margin-top: 0;
+        margin-top: -100px;
         min-width: 100%; /* Ajusta el ancho al 100% */
         rotate: 0deg;
         min-height: 100vh;
@@ -321,6 +321,9 @@ footer{
 
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Ajustes para iconos */
+    section{
+        min-width: 100%;
+    }
     #redes {
         right: 20px; /* Ajusta la distancia desde la derecha */
         top: 20px; /* Ajusta para dispositivos de mayor tamaño */
@@ -359,7 +362,7 @@ footer{
     /* Ajustes para la sección 'Sobre Mi' */
     #sobreMi {
         background-size: cover; /* Optimiza el tamaño del fondo */
-        padding-left: 150px;
+        padding-left: 80px;
     }
 
     .title {
@@ -382,8 +385,8 @@ footer{
 
     /* Ajustes para sección 'Proyectos' */
     #proyectos {
-        padding-left: 150px;
-        min-width: 100%; /* Ajusta para evitar el desbordamiento */
+        padding-left: 40px;
+        min-width: 130%; /* Ajusta para evitar el desbordamiento */
         min-height: 150vh; /* Reduce la altura mínima */
         margin-top: -200px; /* Ajuste según sea necesario */
     }
@@ -401,7 +404,7 @@ footer{
 
     /* Ajustes para sección 'Contacto' */
     #contacto {
-        padding-left: 150px; /* Añade padding para un aspecto más limpio */
+        padding-left: 80px; /* Añade padding para un aspecto más limpio */
     }
 
     #containerContacto {
